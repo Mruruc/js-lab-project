@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "lab-project",
+  "version": "1.0.0",
+  "description": "JavaScript OOP Lab Project for the grade 6th.",
+  "main": "index.js",
+  "scripts": {    
+  "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Omer Uruc",
+  "license": "ISC",
+  "dependencies": {
+  "pg": "^8.11.3"
+  }
+}
