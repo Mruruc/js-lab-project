@@ -14,4 +14,9 @@ __proto__ property & setPrototypeof
 Class and instance operator
 Functions
 loops
+control structure
+json
+Array
+DOM API
+Fetch API
 
