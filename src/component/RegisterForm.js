@@ -1,4 +1,4 @@
-import { createForm, createInput, createLabel } from "../lib/dom-helper.js";
+import {  createForm, createInput, createLabel } from "../lib/dom-helper.js";
 
 function register(){
     const form=createForm([{name:'autocomplete',value:'On'}]);
@@ -55,6 +55,5 @@ function register(){
 
     return form;
 }
-
 
 export default register;

@@ -1,7 +1,6 @@
-import { creatEElement } from "./dom-helper.js";
+import { creatEElement } from "../lib/dom-helper.js";
 
-
- function createFooter(){
+const footer=()=>{
     const footer=document.createElement('footer');
 
     const a=creatEElement('a','©Mr.Uruc',null,null,{name:'href',value:'https://github.com/Mruruc'});
@@ -20,4 +19,4 @@ import { creatEElement } from "./dom-helper.js";
     return footer;
 }
 
-export default createFooter;
+export default footer;

@@ -1,7 +1,6 @@
-import { createForm, createInput, createLabel } from "../lib/dom-helper.js";
+import { createForm,createInput,createLabel} from "../lib/dom-helper.js";
 
-
- function loginForm(){
+function loginForm(){
     const form=createForm();
 
     const userNameLabel=createLabel({forAttrValue:'userName',labelInnerText:'User Name'});

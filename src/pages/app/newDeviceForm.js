@@ -1,4 +1,4 @@
-import { creatEElement, createForm, createInput, createLabel, createSelectTag } from "../lib/dom-helper.js";
+import { creatEElement, createForm, createInput, createLabel, createSelectTag } from "../../lib/dom-helper.js";
 
 export function newDeviceForm(){
     const form=createForm([{name:'autocomplete',value:'On'}]);

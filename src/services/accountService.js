@@ -1,5 +1,5 @@
 
-export async function getData(accountId){
+export async function getDevicesByAccountId(accountId){
     const url=`http://localhost:8080/api/device/${accountId}`;
     const request=new Request(url,{
     method:'GET',
@@ -22,10 +22,35 @@ export async function getData(accountId){
    }
 }
 
+export async function getDevices(){
+        const url='http://localhost:8080/api/device/';
+    
+        const request=new Request(url,{
+            method:'GET',
+            headers:{
+                'Content-Type': 'application/json' 
+            }
+        });
+    
+        try{
+            const response=await fetch(request);
+            if(response.ok){
+                const data=await response.json();
+                return data;
+            }
+            throw new Error(`While fetching data Error ocurred, status: ${response.status} `)
+    
+        }catch(error){
+           console.log(error.message);
+        }
+    }
+
 
 export async function addDevice(device,accountId){
     const jsonDevice=JSON.stringify(device);
 
+    console.log(jsonDevice);
+    
     const url=`http://localhost:8080/api/device/${accountId}`;
     const request=new Request(url,{
     method:'post',

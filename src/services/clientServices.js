@@ -14,13 +14,14 @@ export async function saveClient(client) {
         });
 
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            const errorData=await response.json();
+            throw new Error(`${errorData.message}: ${response.status}`);
         }
 
         const account = await response.json(); // Parse the JSON response body
         return account; // Return the account object
     } catch (error) {
-        console.error("There was an error!", error);
+        throw error;
     }
 }
 

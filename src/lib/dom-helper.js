@@ -39,6 +39,7 @@
     for(let attribute of attributes){
         input.setAttribute(attribute.name,attribute.value);
     }
+    input.setAttribute('required','');
     return input;
 }
 

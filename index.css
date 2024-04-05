@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -30,10 +34,12 @@
 }
 .main{
     margin-top: 5rem;
+    text-align: center;
 }
 
 .error{
     color: red;
+    text-align: center;
 }
 
 th{
@@ -94,3 +100,15 @@ table{
     font-size: large;
     cursor: pointer;
 }
+
+.logo{
+    cursor: pointer; 
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
