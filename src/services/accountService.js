@@ -1,6 +1,7 @@
 
 export async function getDevicesByAccountId(accountId){
     const url=`http://localhost:8080/api/device/${accountId}`;
+    
     const request=new Request(url,{
     method:'GET',
     headers:{
@@ -8,6 +9,7 @@ export async function getDevicesByAccountId(accountId){
     }
    });
    try{
+
     const result=await fetch(request);
 
     if(result.status === 200){

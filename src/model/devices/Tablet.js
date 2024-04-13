@@ -12,3 +12,4 @@ class Tablet extends ElectronicDevice{
 }
 
 export default Tablet;
+

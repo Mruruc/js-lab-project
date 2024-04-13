@@ -1,5 +1,6 @@
   export function creatEElement(elementName,innerTEXT,className,id,attribute){
     const element=document.createElement(elementName);
+    
     if(innerTEXT){
         element.appendChild(document.createTextNode(innerTEXT));
     }
@@ -48,10 +49,13 @@
     const table=document.createElement('table');
     // thead
     const thead=document.createElement('thead');
+
     const tableRowHeader=tableRow();
+
     thead.appendChild(tableRowHeader);
+
     for(let header of headers){
-        let th=createHeader(header);
+        let th = createHeader(header);
         tableRowHeader.appendChild(th);
     }
     table.appendChild(thead);
